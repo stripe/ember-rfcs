@@ -141,7 +141,7 @@ this.resource('business', {path: '/:business'}, function() {
   // Caveat: business.index can never be reached.
   // e.g. The path `/cookie-shop` will resolve to `business.mode.index` with `params: {}`.
     
-  this.resource('mode', {path: '/:mode?}), function() {
+  this.resource('mode', {path: '/:mode?'}), function() {
     this.resource('payments', function() { ... });
     this.resource('customers', function() { ... });
     this.resource('transfers', function() { ... });
